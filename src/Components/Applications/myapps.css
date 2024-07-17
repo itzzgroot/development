@@ -1,0 +1,50 @@
+.myapps {
+    text-align: center;
+    margin-top: 2%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+.flexdivision, .flexdivision-next {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.flexx {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid lightcoral;
+    margin: 40px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #CCC8C6;
+    transition: transform 0.5s ease; 
+}
+
+.flexx:hover {
+    transform: scale(1.1); /* Apply scaling effect on hover */
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+.flexx img {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    text-align: center;
+    margin-top: 25px;
+
+}

@@ -1,0 +1,63 @@
+.document-manager {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; /* Center align the content */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .document-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left; /* Align list items to the left */
+  }
+  
+  .document-list li {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .document-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .file-input {
+    display: block;
+    margin: 10px auto; /* Center the file input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="file"] {
+
+  }
+
+  .myButtons {
+    display: flex; /* Ensures buttons are displayed in a row */
+    justify-content: center; /* Centers buttons horizontally */
+  }
+  
+  .downloadButton,
+  .uploadButton {
+    margin: 0 10px; /* Adjust the margin as per your spacing requirements */
+  }
+  
+  
+  .download-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
