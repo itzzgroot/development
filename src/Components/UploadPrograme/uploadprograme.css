@@ -1,0 +1,49 @@
+.document-manager{
+    max-width: 700px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+
+.answer textarea {
+    width: 90%;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    min-height: 150px; /* Adjust height as needed */
+    resize: vertical;
+    background-color: #fffaf0; /* Light yellow background */
+    border: 2px solid #ffd700; /* Gold border */
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1rem; /* Allows resizing only vertically */
+}
+
+.problem input {
+    width: 90%;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    background-color: #f0f8ff; /* Light blue background */
+    border: 2px solid #1e90ff; /* Blue border */
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mybuttons { 
+    margin: 2%;
+    justify-content: center;
+    display: flex;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 2%;
+  }

@@ -7,6 +7,7 @@ const ProfileSchema = new mongoose.Schema({
     password: String
 })
 
+
 const ProfileModel = mongoose.model('register', ProfileSchema)
 
 module.exports = ProfileModel

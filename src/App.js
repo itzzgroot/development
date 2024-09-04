@@ -4,6 +4,10 @@ import './App.css';
 import Login from './Components/Login/login';
 import Applications from './Components/Applications/myapps';
 import Documents from './Components/Documents/document';
+import UploadPrograme from './Components/UploadPrograme/uploadprograme';
+import Solutions from './Components/MySolutions/solutions';
+import Popup from './Common/Popup/popup';
+
 
 function App() {
   return (
@@ -13,6 +17,9 @@ function App() {
       <Route path="/document" element={<Documents />} />
       <Route path="/register" element={<Register />} />
       <Route path="/myapps" element={<Applications />} />
+      <Route path="/uploadprograme" element={<UploadPrograme />} />
+      <Route path="/solutions" element={<Solutions />} />
+      <Route path="/popup" element={<Popup/>} />
       </Routes>
     </BrowserRouter>   
   );

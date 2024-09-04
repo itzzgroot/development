@@ -2,6 +2,8 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const ProfileModel = require('./models/Profile')
+const WorkoutModel = require('./models/Workout')
+const SolutionModel = require('./models/Solutions')
 
 const app = express();
 
@@ -29,6 +31,22 @@ app.post('/register', (req, res)=>{
     .catch(err => res.json(err))
 })
 
+app.get('/uploadprograme', async (req, res) => {
+  try {
+      const data = await WorkoutModel.find({});
+      res.json(data); // Includes _id by default
+  } catch (err) {
+      res.status(500).send(err);
+  }
+});
+
+app.post('/uploadprograme', (req, res) => {
+  WorkoutModel.create(req.body)
+      .then(profiles => res.json(profiles))
+      .catch(err => res.json(err));
+});
+
+
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
   ProfileModel.findOne({ email: email })
@@ -48,6 +66,7 @@ app.post('/login', (req, res) => {
       res.status(500).json("Server error");
     });
 });
+
 
 connection.once('open', () => {
   console.log("MongoDB connection established");
